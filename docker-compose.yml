@@ -1,0 +1,27 @@
+version: '3.9'
+
+services:
+  postgres_db:
+    image: postgres:17.5
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: isinamuva
+      POSTGRES_PASSWORD: isinamuvaPass
+      POSTGRES_DB: booking
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  nextjs_app:
+    container_name: nextjs_app
+    build: ./app   # optional, if you have a Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgresql://isinamuva:isinamuvaPass@postgres_db:5432/booking
+    depends_on:
+      - postgres_db
+
+volumes:
+  postgres_data:

@@ -1,0 +1,301 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure content starts below fixed navbar */
+body {
+  padding-top: 80px;
+}
+
+/* For pages that already have their own padding-top, reset it */
+.no-body-padding {
+  margin-top: -80px;
+}
+
+.react-calendar {
+  width: 100% !important;
+  border: none !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+.react-calendar__navigation__label__labelText {
+  font-weight: 600;
+}
+
+.react-calendar__tile--active {
+  background-color: #c3ebfa !important;
+  color: black !important;
+}
+
+.rbc-btn-group:first-child {
+  display: none !important;
+}
+
+.rbc-toolbar-label {
+  text-align: right !important;
+  padding: 0px 20px !important;
+}
+
+.rbc-btn-group:last-child {
+  font-size: 13px !important;
+}
+
+.rbc-btn-group:last-child button {
+  border: none !important;
+  background-color: #f1f0ff !important;
+  margin-left: 2px !important;
+}
+
+.rbc-toolbar button.rbc-active {
+  background-color: #dbdafe !important;
+  box-shadow: none !important;
+}
+
+.rbc-time-view {
+  border-color: #eee !important;
+}
+
+.rbc-time-header {
+  display: none !important;
+}
+
+.rbc-time-content {
+  border: none !important;
+}
+
+.rbc-time-gutter.rbc-time-column {
+  font-size: 12px !important;
+}
+
+.rbc-time-gutter.rbc-time-column .rbc-timeslot-group {
+  padding: 0px 20px !important;
+}
+
+.rbc-timeslot-group {
+  background-color: #f7fdff !important;
+}
+
+.rbc-day-slot {
+  font-size: 14px !important;
+}
+
+.rbc-event {
+  border: none !important;
+  color: black !important;
+  padding: 10px !important;
+  margin: 10px !important;
+  width: 99% !important;
+}
+
+.rbc-event:nth-child(1) {
+  background-color: #e2f8ff !important;
+}
+.rbc-event:nth-child(2) {
+  background-color: #fefce8 !important;
+}
+.rbc-event:nth-child(3) {
+  background-color: #f2f1ff !important;
+}
+.rbc-event:nth-child(4) {
+  background-color: #fdf2fb !important;
+}
+.rbc-event:nth-child(5) {
+  background-color: #e2f8ff !important;
+}
+.rbc-event:nth-child(6) {
+  background-color: #fefce8 !important;
+}
+.rbc-event:nth-child(7) {
+  background-color: #f2f1ff !important;
+}
+.rbc-event:nth-child(8) {
+  background-color: #fdf2fb !important;
+}
+
+.rbc-event-label{
+  color: gray !important;
+  margin-bottom: 5px;
+}
+
+/* Study Planner Enhanced Styles */
+.rbc-calendar {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.rbc-header {
+  padding: 12px 8px !important;
+  font-weight: 600 !important;
+  font-size: 0.875rem !important;
+  color: #475569 !important;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
+  border-bottom: 2px solid #e2e8f0 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.rbc-today {
+  background-color: #fef3c7 !important;
+}
+
+.rbc-off-range-bg {
+  background-color: #f8fafc !important;
+}
+
+.rbc-month-view,
+.rbc-time-view,
+.rbc-agenda-view {
+  border: none !important;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.rbc-month-row,
+.rbc-day-bg {
+  border-color: #e2e8f0 !important;
+}
+
+.rbc-event {
+  border-radius: 8px !important;
+  padding: 4px 8px !important;
+  font-weight: 500 !important;
+  font-size: 0.875rem !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.2s ease !important;
+}
+
+.rbc-event:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.rbc-toolbar {
+  padding: 16px !important;
+  margin-bottom: 16px !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  color: white !important;
+}
+
+.rbc-toolbar button {
+  color: white !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+
+.rbc-toolbar button:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  transform: translateY(-1px);
+}
+
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active {
+  background: rgba(255, 255, 255, 0.3) !important;
+  border-color: white !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.rbc-date-cell {
+  padding: 8px !important;
+  font-weight: 500;
+}
+
+.rbc-date-cell.rbc-now {
+  font-weight: 700;
+}
+
+.rbc-date-cell > a {
+  color: #1e293b !important;
+  font-size: 0.95rem;
+}
+
+.rbc-date-cell.rbc-now > a {
+  color: #f59e0b !important;
+}
+
+.rbc-current-time-indicator {
+  background-color: #ef4444 !important;
+  height: 2px !important;
+}
+
+/* Agenda View Styling */
+.rbc-agenda-table {
+  border: none !important;
+}
+
+.rbc-agenda-date-cell,
+.rbc-agenda-time-cell {
+  padding: 12px !important;
+  font-weight: 600 !important;
+  color: #475569 !important;
+}
+
+.rbc-agenda-event-cell {
+  padding: 12px !important;
+}
+
+/* Time Slot Styling */
+.rbc-time-slot {
+  border-top-color: #f1f5f9 !important;
+}
+
+.rbc-time-header-content {
+  border-left-color: #e2e8f0 !important;
+}
+
+/* Selection Styling */
+.rbc-slot-selection {
+  background-color: rgba(102, 126, 234, 0.3) !important;
+  border: 2px solid #667eea !important;
+  border-radius: 8px;
+}
+
+/* Drag and Drop Styles */
+.rbc-addons-dnd-drag-preview {
+  opacity: 0.7 !important;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3) !important;
+  cursor: grabbing !important;
+}
+
+.rbc-addons-dnd-dragging {
+  opacity: 0.5 !important;
+  cursor: grabbing !important;
+}
+
+.rbc-addons-dnd-over {
+  background-color: rgba(102, 126, 234, 0.1) !important;
+}
+
+.rbc-addons-dnd-resizing {
+  opacity: 0.7 !important;
+}
+
+.rbc-event-content {
+  cursor: grab !important;
+}
+
+.rbc-event-content:active {
+  cursor: grabbing !important;
+}
+
+/* Resize handle styling */
+.rbc-addons-dnd-resize-ns-anchor {
+  width: 100% !important;
+  height: 8px !important;
+  cursor: ns-resize !important;
+}
+
+.rbc-addons-dnd-resize-ew-anchor {
+  width: 8px !important;
+  height: 100% !important;
+  cursor: ew-resize !important;
+}
+
+.rbc-addons-dnd-resize-anchor:hover {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
